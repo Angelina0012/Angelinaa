@@ -1,0 +1,39 @@
+﻿<Window x:Class="Practicheskaya18.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practicheskaya18"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="315.816" Width="470">
+    <Grid>
+        <CheckBox x:Name="b1" Content="Вкл/Выкл" HorizontalAlignment="Left" Margin="81,189,0,0" VerticalAlignment="Top" Checked="b1_Checked" Click="b1_Checked"/>
+        <GroupBox x:Name="gb1" Header="Автоматический режим" HorizontalAlignment="Left" Height="181" Margin="27,3,0,0" VerticalAlignment="Top" Width="184">
+            <Grid HorizontalAlignment="Left" Height="162" Margin="15,-4,0,0" VerticalAlignment="Top" Width="139">
+                <RadioButton x:Name="mon" Content="Понедельник" HorizontalAlignment="Left" Margin="32,12,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+                <RadioButton x:Name="tue" Content="Вторник" HorizontalAlignment="Left" Margin="32,32,0,0" VerticalAlignment="Top" Checked="tue_Checked"/>
+                <RadioButton x:Name="wed" Content="Среда" HorizontalAlignment="Left" Margin="32,52,0,0" VerticalAlignment="Top" Checked="wed_Checked"/>
+                <RadioButton x:Name="thu" Content="Четверг" HorizontalAlignment="Left" Margin="32,72,0,0" VerticalAlignment="Top" Checked="thu_Checked"/>
+                <RadioButton x:Name="fri" Content="Пятница" HorizontalAlignment="Left" Margin="32,92,0,0" VerticalAlignment="Top" Checked="fri_Checked"/>
+                <RadioButton x:Name="sat" Content="Суббота" HorizontalAlignment="Left" Margin="32,112,0,0" VerticalAlignment="Top" Checked="sat_Checked"/>
+                <RadioButton x:Name="sun" Content="Воскресенье" HorizontalAlignment="Left" Margin="32,132,0,0" VerticalAlignment="Top" Checked="sun_Checked"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="gb2" Header="Ручной режим" HorizontalAlignment="Left" Height="180" Margin="257,4,0,0" VerticalAlignment="Top" Width="177">
+            <Grid HorizontalAlignment="Left" Height="157" Margin="15,-5,0,0" VerticalAlignment="Top" Width="139">
+                <RadioButton x:Name="mon1" Content="Понедельник" HorizontalAlignment="Left" Margin="32,12,0,0" VerticalAlignment="Top" Checked="mon1_Checked"/>
+                <RadioButton x:Name="tue1" Content="Вторник" HorizontalAlignment="Left" Margin="32,32,0,0" VerticalAlignment="Top" Checked="tue1_Checked2"/>
+                <RadioButton x:Name="wed1" Content="Среда" Margin="32,52,0,0" VerticalAlignment="Top" Checked="wed1_Checked2" HorizontalAlignment="Left" Width="53"/>
+                <RadioButton x:Name="thu1" Content="Четверг" HorizontalAlignment="Left" Margin="32,72,0,0" VerticalAlignment="Top" Checked="thu1_Checked2"/>
+                <RadioButton x:Name="fri1" Content="Пятница" HorizontalAlignment="Left" Margin="32,92,0,0" VerticalAlignment="Top" Checked="fri1_Checked2"/>
+                <RadioButton x:Name="sat1" Content="Суббота" HorizontalAlignment="Left" Margin="32,112,0,0" VerticalAlignment="Top" Checked="sat1_Checked2"/>
+                <RadioButton x:Name="sun1" Content="Воскресенье" HorizontalAlignment="Left" Margin="32,132,0,0" VerticalAlignment="Top" Checked="sun1_Checked2"/>
+                <Button x:Name="raschet" Content="Ответ" HorizontalAlignment="Left" Margin="32,152,0,89" Width="75" Click="raschet_Click"/>
+            </Grid>
+        </GroupBox>
+        <CheckBox x:Name="b2" Content="Вкл/Выкл" HorizontalAlignment="Left" Margin="314,189,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.562,0.409" Click="b2_Checked"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="162,214,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="О программе" HorizontalAlignment="Left" Margin="242,214,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
